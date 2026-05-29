@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Scaleyes – Marketing & Consulting Company for Scalable Client Acquisition</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <meta
     name="description"
     content="Scaleyes is a marketing agency building scalable client acquisition systems, outreach engines, and appointment generation for modern businesses."
@@ -36,7 +36,12 @@
             <div class="brand-sub">Marketing &amp; Consulting Company</div>
           </div>
         </a>
-        <nav class="nav-links">
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <nav class="nav-links" id="site-nav">
           <a href="index.html" class="active">Home</a>
           <a href="about.html">About Us</a>
           <a href="services.html">Services</a>
@@ -279,6 +284,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/nav.js" defer></script>
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
